@@ -17,3 +17,10 @@ remove all dismount
 ::we can see the unmounted volume by listing the volumes again (the volume should be shown to be offline)
 list volume
 ```
+
+## View current Windows product key from the command line
+
+```bat
+:: the following returns the product key
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
