@@ -1,6 +1,6 @@
 # Less common stuff to do with the command prompt
 
-## Dismount drive using the command line
+## Unmount drive using the command line
 
 ```bat
 diskpart
@@ -11,5 +11,9 @@ list volume
 ::assuming that the volume of the removable drive is number 4
 select volume 4
 
+::now unmount disk
 remove all dismount
+
+::we can see the unmounted volume by listing the volumes again (the volume should be shown to be offline)
+list volume
 ```
